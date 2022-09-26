@@ -43,7 +43,7 @@ if(application.getAttribute(username) != null)
 
 else 
 {
-	out.println("当前用户或者密码不存在，三秒后回到登录页面");
+	out.println("当前用户不存在，三秒后回到登录页面");
 	response.setHeader("refresh","3;login.jsp"); 
 }
 

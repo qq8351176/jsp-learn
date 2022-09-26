@@ -27,7 +27,10 @@ input {
 		年&nbsp;&nbsp;&nbsp;&nbsp;龄:<input type="text" name="age" ><br>
 		地&nbsp;&nbsp;&nbsp;&nbsp;址:<input type="text" name="address" ><br>
 		<input type="submit" value="注册"  id="register">
+		<input type="button" id = "return_to_login" value="返回登录页面">
 	</form>
+	
+
 	
 	<script type="text/javascript">
 		//将登录页面的数据 直接拷贝过来
@@ -50,6 +53,9 @@ input {
 				$("#password-control").val("显示密码");
 			}
 
+		});
+		$("#return_to_login").click(function(){
+			window.location.replace("./login.jsp");
 		});
 	</script>
 </body>
